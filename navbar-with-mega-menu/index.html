@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with mega menu</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:all&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <div id="logo">
+      <img src="logo.png" alt="Logo">
+      <div id="menu-toggle" onclick="toggleMenu()">
+        <i class="material-icons">menu</i>
+      </div>
+    </div>
+    <ul class="nav-list">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item with-submenu">
+        <span>Products</span>
+        <ul class="submenu">
+          <li class="column">
+            <span>Electronics</span>
+            <ul>
+              <li><a href="#"><i class="material-icons">smartphone</i><span>Smartphone</span></a></li>
+              <li><a href="#"><i class="material-icons">laptop</i><span>Laptops</span></a></li>
+              <li><a href="#"><i class="material-icons">headset</i><span>Headphones</span></a></li>
+              <li><a href="#"><i class="material-icons">tablet</i><span>Tablets</span></a></li>
+            </ul>
+            <li class="column">
+              <span>Fashion</span>
+              <ul>
+                  <li><a href="#"><i class="material-icons">style</i><span>Clothing</span></a></li>
+                  <li><a href="#"><i class="material-icons">sports_motorsports</i><span>Sunglasses</span></a></li>
+                  <li><a href="#"><i class="material-icons">accessibility</i><span>Hats</span></a></li>
+                  <li><a href="#"><i class="material-icons">sports_soccer</i><span>Shoes</span></a></li>
+              </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item with-submenu">
+        <span>Services</span>
+        <ul class="submenu">
+            <li class="column">
+                <span>Web Design</span>
+                <ul>
+                    <li><a href="#"><i class="material-icons">format_paint</i><span> UI/UXDesign</span></a></li>
+                    <li><a href="#"><i class="material-icons">code</i><span> Frontend Development</span></a></li>
+                    <li><a href="#"><i class="material-icons">storage</i><span> Backend Development</span></a></li>
+                </ul>
+              </li>
+            <li class="column">
+                <span>Consulting</span>
+                <ul>
+                    <li><a href="#"><i class="material-icons">lightbulb</i><span> Business Ideas</span></a></li>
+                    <li><a href="#"><i class="material-icons">people_alt</i><span>Partnerships</span></a></li>
+                    <li><a href="#"><i class="material-icons">trending_up</i><span> Growth Strategies</span></a></li>
+                </ul>
+              </li>
+            <li class="column">
+                <span>Marketing</span>
+                <ul>
+                    <li><a href="#"><i class="material-icons">campaign</i><span>Advertising</span></a></li>
+                    <li><a href="#"><i class="material-icons">email</i><span> Email Campaigns</span></a></li>
+                    <li><a href="#"><i class="material-icons">pie_chart</i><span>Analytics</span></a></li>
+                </ul>
+              </li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Contact</a></li>
+      <li class="nav-item" id="login-signup">
+        <span><a href="#">Login</a></span>
+        <button>Sign Up Free</button>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
